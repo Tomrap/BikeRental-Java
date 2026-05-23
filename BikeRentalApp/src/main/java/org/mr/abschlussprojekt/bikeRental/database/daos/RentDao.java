@@ -53,7 +53,6 @@ public class RentDao {
             pstmt.setDate(4, java.sql.Date.valueOf(startDate));
             pstmt.setDate(5, java.sql.Date.valueOf(returnDate));
             pstmt.setDouble(6, rentPrice);
-            pstmt.setBoolean(7, false); // is_returned is always FALSE when creating a new rental
 
             int affectedRows = pstmt.executeUpdate();
 
