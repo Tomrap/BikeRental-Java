@@ -1,0 +1,5 @@
+Lets add dynamic pricing. If I bike was not rented within last 30 days lets decrease the price 10% (always count increase or decrease in percentage based on original price)
+And for each 30 days for another 10% down to minimum 50% of original price. Treat current price as original. So if a bike was not rented in last 90 days than the price is 30% lower.
+If I bike gets rented, lets increase the price 10% (of orignal) everytime it is rented but make sure the the price always stats within 50-100% of original price.
+The price is adjusted on-demand when bikes are loaded/displayed or rented/returned.
+Only apply the idle-discount logic to bikes with `AVAILABLE` status.
